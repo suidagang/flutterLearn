@@ -18,7 +18,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
 			..add(EmailScreen())
 			..add(PagesScreen())
 			..add(AirplayScreen());
-			super.initState();
+		super.initState();
 	}
 	@override
 	Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
 						_currentIndex = index;
 					});
 				},
-				type:BottomNavigationBarType.fixed
+				type:BottomNavigationBarType.shifting
 			),
 		);
 	}
